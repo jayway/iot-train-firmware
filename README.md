@@ -1,9 +1,13 @@
 IoT Train firmware
 ========================================
 
-Contains source code and build instructions needed by the ![IoT Train](./docs/train_title.jpg =250x250).
+Firmware 
+
+<img src="docs/train_title.jpg" width="200">.
 
 Build
 -----
 
-The build process is documented in [buildspec.yml](buildspec.yml) and used by AWS CodeBuild as part of the CI/CD flow.
+Using PlatformIO build environment.
+
+See [buildspec.yml](buildspec.yml).
