@@ -1,0 +1,23 @@
+# CodeBuild specification
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip install -U platformio
+  pre-build:
+      - platformio upgrade
+      - platformio update
+  build:
+    commands:
+      - echo Build started on `date`
+      - platformio run
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - '.pioenvs/d1_mini/firmware.bin'
+    - '.pioenvs/d1_mini/firmware.elf'
+
